@@ -13,6 +13,66 @@ export { getArchetypeProfile } from "./archetypes.js";
 export { computeConsciousnessState, getDrugCategory } from "./consciousness.js";
 export { loadMiberaFromCodex, loadAllMiberas } from "./loader.js";
 
+// Social Graph exports
+export {
+  getRelationship,
+  findSoulmates,
+  findRivals,
+  getFaction,
+  describeRelationship
+} from "./social-graph.js";
+
+// Dreamscape exports
+export {
+  getMiberaState,
+  generateDream,
+  getInnerMonologue,
+  getDreamSequence,
+  getHistoricalState
+} from "./dreamscape.js";
+
+// Possession Protocol exports
+export {
+  exportForEliza,
+  exportForOpenClaw,
+  exportForClaude,
+  exportForOpenAI,
+  exportForDiscord,
+  possess,
+  getPossessionPrompt,
+  exportAllFormats
+} from "./possession.js";
+
+// Kaironic Oracle exports
+export {
+  consultOracle,
+  assembleCouncil,
+  askOracle,
+  formatOracleResponse
+} from "./oracle.js";
+
+// Rave Generator exports
+export {
+  generateRave,
+  formatRave,
+  quickRave,
+  generateDreamVisual,
+  generateStateVisual
+} from "./rave-generator.js";
+
+// Visual exports (Nano Banana compatible)
+export {
+  getSelfImageUrl,
+  getSelfImageUrls,
+  getSelfDescription,
+  generateNanoBananaDream,
+  generateNanoBananaState,
+  generateNanoBananaCharacterSheet,
+  generateNanoBananaScene,
+  exportVisualPackage,
+  formatVisualPackage
+} from "./visuals.js";
+
 /**
  * Generate a complete personality for a Mibera by ID
  * This is the main entry point for the engine
